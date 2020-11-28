@@ -1,0 +1,30 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero{
+    background-image: url(../images/background2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+}
+
+.title{
+    margin-left: 50px;
+}
+.subtitle{
+margin-left: 50px;
+    color: white;
+    padding: 10px 0;}
+
+.tickers{
+    margin-left: 50px;
+    color: white;
+    padding: 10px 0;
+}
