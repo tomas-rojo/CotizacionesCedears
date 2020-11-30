@@ -34,9 +34,7 @@ def index(request):
         i += 1
         r += 1
         datos.append(info)
-        print(ccl)
 
     context = {'datos': datos}
-    #print(context)
 
     return render(request, 'root/index.html', context)
