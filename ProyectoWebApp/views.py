@@ -41,6 +41,9 @@ def index(request):
         datos.append(info)
 
     context = {'datos': datos}
+<<<<<<< HEAD
     print(average_ccl)
+=======
+>>>>>>> 498b66aaa15ae239b83cfcd6172addaf5be0719f
 
     return render(request, 'root/index.html', context)
