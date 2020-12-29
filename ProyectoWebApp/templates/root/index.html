@@ -13,17 +13,19 @@
 <body>
 
 
-<!-------------------------------SCRIPT 1---------------------------------------> 
+<!-------------------------------MAIN--------------------------------------->
+
 <section class="hero">
-    <h1 class="title">COTIZACIONES CCL</h1>
-    <h3 class="subtitle">TICKER - LAST - CHANGE</h3>
-    {% for tickers in datos %}
     <div class="title">
-        <h3 class="tickers">{{ tickers.tickers }} - {{ tickers.ccl }} - {% if tickers.variacion >= 0 %}
-                <span style="color:green;"> + {{ tickers.variacion }}</span>
+        <h1>COTIZACIONES CCL</h1>
+    </div>
+    {% for tickers in datos %}
+    <div class="tickers">
+        <h5>{{ tickers.tickers }} | {{ tickers.ccl }} | {% if tickers.variacion >= 0 %}
+                <span style="color:#4eba6b;"> + {{ tickers.variacion }} </span>|<span style="color:#4eba6b;"> + {{ tickers.porcentaje }}%</span>
             {% else %}
-                <span style="color:red;"> {{ tickers.variacion }}</span>
-            {% endif %} </h3>
+                <span style="color:red;"> {{ tickers.variacion }} </span>|<span style="color:red;"> {{ tickers.porcentaje }}%</span>
+            {% endif %} </h5>
     </div>
     {% endfor %}
 </section>
